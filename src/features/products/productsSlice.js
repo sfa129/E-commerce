@@ -11,16 +11,6 @@ export const fetchProducts = createAsyncThunk(
   }
 );
 
-// useEffect(() => {
-//   const fetchProducts = async () => {
-//     const res = await fetch("https://fakestoreapi.com/products");
-//     const data = await res.json(); // <- data is an array directly
-//     setProducts(data); // not data.products
-//   };
-
-//   fetchProducts();
-// }, []);
-
 const productsSlice = createSlice({
   name: "products",
   initialState: {
